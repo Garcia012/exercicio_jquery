@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #eee;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li .actions {
+    display: flex;
+    gap: 5px;
+}
+
+li .actions button {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+li .actions button.complete {
+    background-color: #5cb85c;
+    color: white;
+}
+
+li .actions button.complete:hover {
+    background-color: #4cae4c;
+}
+
+li .actions button.modify {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+li .actions button.modify:hover {
+    background-color: #ec971f;
+}
+
+li .actions button.delete {
+    background-color: #d9534f;
+    color: white;
+}
+
+li .actions button.delete:hover {
+    background-color: #c9302c;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: gray;
+}
